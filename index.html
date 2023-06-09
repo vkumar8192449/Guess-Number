@@ -10,7 +10,7 @@
   <body>
     <header>
       <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
+      <p class="between" onclick="openmodal()">MODE: EASY</p>
       <button class="btn again" onclick="restart()">Again!</button>
       <div class="number">?</div>
     </header>
@@ -21,12 +21,22 @@
       </section>
       <section class="right">
         <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">10</span></p>
+        <p class="label-score">💯 Score: <span class="score">100</span></p>
         <p class="label-highscore">
           🥇 Highscore: <span class="highscore"></span>
         </p>
       </section>
     </main>
+    <section id="backmodal">
+      <div id="modal">
+        <div class="modes">
+          <h3 class="easy" onclick="changemode('EASY')">Easy</h3>
+          <h3 class="med" onclick="changemode('MEDIUM')">Medium</h3>
+          <h3 class="hrd" onclick="changemode('HARD')">Hard</h3>
+        </div>
+      </div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>

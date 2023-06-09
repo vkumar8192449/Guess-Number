@@ -15,7 +15,6 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
-  /* background-color: #60b347; */
 }
 
 /* LAYOUT */
@@ -74,6 +73,9 @@ h1 {
   position: absolute;
   top: 2rem;
   right: 2rem;
+  border: 2px solid white;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .again {
@@ -116,4 +118,64 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+#backmodal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#modal {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display: none;
+}
+
+.modes {
+  color: rgb(74, 73, 73);
+  display: flex;
+  border: 3px solid black;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.modes h3 {
+  padding: 12px;
+  background-color: #cbc8c8;
+  cursor: pointer;
+}
+
+.modes h3:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.modes h3:nth-child(1) {
+  background-color: #9fe875;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.modes h3:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.modes h3:nth-child(3) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
